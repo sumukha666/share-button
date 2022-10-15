@@ -9,8 +9,12 @@ const DispItems = (props) => {
         <div>
           <div className="sub-header">{title}</div>
           <div className="dsp-flex-col">
-            {list.map((e) => (
-              <div className="select-item" onClick={()=>onClick(e)}>
+            {list.map((e, i) => (
+              <div
+                key={e.name || i}
+                className="select-item"
+                onClick={() => onClick(e)}
+              >
                 <UserProfile title={e.name} />
               </div>
             ))}
