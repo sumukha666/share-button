@@ -19,7 +19,7 @@ const SearchProfile = (props) => {
   };
 
   return (
-    <div className="mr-t-1-r wd-30-r">
+    <div className="mr-t-1-r wd-25-r">
       <Card
         headerComp={
           <Header
