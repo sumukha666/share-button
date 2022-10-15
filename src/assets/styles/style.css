@@ -12,10 +12,11 @@ code {
     monospace;
 }
 .btn-primary {
-    background-color: rgb(32, 30, 32);
-    color: white;
-    border: 1px solid rgb(32, 30, 32);
-    padding: 0.25rem 0.5rem;
+  background-color: rgb(32, 30, 32);
+  color: white;
+  border: 1px solid rgb(32, 30, 32);
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
 }
 .mr-1-r {
   margin: 1rem;
@@ -34,7 +35,7 @@ code {
   display: flex;
   flex-direction: column;
 }
-.sub-heading{
+.sub-heading {
   font-weight: 550;
   font-size: 1rem;
 }
@@ -55,4 +56,19 @@ code {
 .card-footer {
   padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.search-input {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  border-top-right-radius: 0rem;
+  border-bottom-right-radius: 0rem;
+  padding: 0.25rem 0.75rem;
+}
+.search-btn {
+  padding: 0.25rem 0.75rem;
+  border: 1px solid black;
+  border-left: 0rem;
+  border-radius: 0.25rem;
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 0rem;
 }
