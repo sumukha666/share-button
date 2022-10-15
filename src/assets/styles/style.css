@@ -63,6 +63,7 @@ code {
   border-top-right-radius: 0rem;
   border-bottom-right-radius: 0rem;
   padding: 0.25rem 0.75rem;
+  width: 100%;
 }
 .search-btn {
   padding: 0.25rem 0.75rem;
@@ -71,4 +72,7 @@ code {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0rem;
   border-top-left-radius: 0rem;
+}
+.wd-30-r {
+  width: 30rem;
 }
