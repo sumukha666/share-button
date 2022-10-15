@@ -1,17 +1,22 @@
 import React, { useEffect } from "react";
+import Button from "../../common/Button";
 import SelectedOption from "../../common/SelectedOption";
 import TextField from "../../common/TextField";
 
 const Header = (props) => {
-  const { getFilterVal, setSelectedProfile, selectedProfile } = props;
+  const { getFilterVal, setSelectedProfile, selectedProfile, onInvite } = props;
   const onInput = (event) => getFilterVal(event.target.value);
 
   useEffect(() => {
     getFilterVal("");
   }, [selectedProfile]);
 
+  const sendInvite = (profile) => {
+    onInvite(selectedProfile)
+  };
+
   return (
-    <div>
+    <div className="dsp-flex flex-space-btw">
       {!selectedProfile ? (
         <TextField
           name="userProfile"
@@ -28,6 +33,7 @@ const Header = (props) => {
           />
         </div>
       )}
+      <Button label="Invite" onClick={sendInvite} />
     </div>
   );
 };

@@ -4,23 +4,28 @@ import SearchProfile from "../search-profile/SearchProfile";
 import ShareCard from "./ShareCard";
 
 const ShareBtn = (props) => {
-  
+  const { addToAccessUsers } = props;
   const [showCard, setShowCard] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
 
   const toggleShare = () => setShowCard(!showCard);
-  const onInvite = () => {
-    setShowSearch(false);
-  }
-
+  const onInvite = (selectedUser) => {
+    if (selectedUser) {
+      addToAccessUsers(selectedUser);
+      setShowSearch(false);
+    }
+  };
 
   return (
     <>
       <Button label="Share" onClick={toggleShare} />
-      {showCard && <ShareCard dispSearch={()=> setShowSearch(true)} accessUsers={props.accessUsers} />}
-      {
-        showSearch && <SearchProfile onInvite={onInvite} {...props} />
-       }
+      {showCard && (
+        <ShareCard
+          dispSearch={() => setShowSearch(true)}
+          accessUsers={props.accessUsers}
+        />
+      )}
+      {showSearch && <SearchProfile onInvite={onInvite} {...props} />}
     </>
   );
 };

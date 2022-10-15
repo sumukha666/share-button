@@ -4,7 +4,7 @@ import Body from "./card-elements/Body";
 import Header from "./card-elements/Header";
 
 const SearchProfile = (props) => {
-  const { users, groups } = props;
+  const { users, groups, onInvite } = props;
   const [searchStr, setSearchStr] = useState("");
   const [selectedProfile, setSelectedProfile] = useState(null);
 
@@ -26,6 +26,7 @@ const SearchProfile = (props) => {
             getFilterVal={getFilterVal}
             selectedProfile={selectedProfile}
             setSelectedProfile={setSelectedProfile}
+            onInvite={onInvite}
           />
         }
         mainComp={

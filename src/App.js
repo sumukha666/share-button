@@ -4,7 +4,11 @@ import { users, groups, accessProfiles } from "./system/config/default.values";
 
 const App = () => {
   const [accessUsers, setAccessUsers] = useState(accessProfiles);
-  const addToAccessUsers = () => {};
+  const addToAccessUsers = (userInfo) => {
+    const selectedUsers = [...accessUsers];
+    selectedUsers.push(userInfo);
+    setAccessUsers(selectedUsers);
+  };
 
   return (
     <div className="App">
