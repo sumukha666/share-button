@@ -4,7 +4,9 @@ import ShareBtn from "./components/share-button/ShareBtn";
 const App = () => {
   return (
     <div className="App">
-      <ShareBtn />
+      <div className="mr-1-r">
+        <ShareBtn />
+      </div>
     </div>
   );
 };
