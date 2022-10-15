@@ -1,6 +1,6 @@
 import React from "react";
 
-const TextField = (props) => {
+const SearchField = (props) => {
   const { onClick, name, placeholder, btnLabel, onInputClick } = props;
   return (
     <div className="dsp-flex">
@@ -17,4 +17,4 @@ const TextField = (props) => {
   );
 };
 
-export default TextField;
+export default SearchField;
