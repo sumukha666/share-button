@@ -36,7 +36,7 @@ code {
   flex-direction: column;
 }
 .sub-heading {
-  font-weight: 550;
+  font-weight: 520;
   font-size: 1rem;
 }
 .text-para {
@@ -75,4 +75,20 @@ code {
 }
 .wd-30-r {
   width: 30rem;
+}
+.plain-text-input {
+  width: 100%;
+  border: none;
+  background-color: inherit;
+  height: 100%;
+}
+.plain-text-input:focus {
+  outline: none;
+}
+.select-item {
+  padding: 0.5rem 0rem;
+}
+.select-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
