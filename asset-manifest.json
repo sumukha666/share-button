@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/share-button/static/css/main.4fe79086.css",
+    "main.js": "/share-button/static/js/main.28b22950.js",
+    "index.html": "/share-button/index.html",
+    "main.4fe79086.css.map": "/share-button/static/css/main.4fe79086.css.map",
+    "main.28b22950.js.map": "/share-button/static/js/main.28b22950.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4fe79086.css",
+    "static/js/main.28b22950.js"
+  ]
+}
