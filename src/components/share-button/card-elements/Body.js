@@ -1,5 +1,5 @@
 import React from "react";
-import TextField from "../../common/SearchField";
+import SearchField from "../../common/SearchField";
 
 const Body = () => {
   const inputClick = () => {
@@ -8,7 +8,7 @@ const Body = () => {
 
   return (
     <div>
-      <TextField
+      <SearchField
         name="search"
         placeholder="People, emails, groups"
         onClick={inputClick}
