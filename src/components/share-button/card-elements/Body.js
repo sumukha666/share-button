@@ -1,9 +1,9 @@
 import React from "react";
 import SearchField from "../../common/SearchField";
 
-const Body = () => {
+const Body = (props) => {
   const inputClick = () => {
-    console.log("input clicked");
+    console.log( props);
   };
 
   return (

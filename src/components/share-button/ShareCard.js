@@ -6,7 +6,7 @@ import Header from "./card-elements/Header";
 const ShareCard = (props) => {
   return (
     <div className="mr-t-1-r">
-      <Card headerComp={<Header />} mainComp={<Body />} />
+      <Card headerComp={<Header />} mainComp={<Body {...props} />} />
     </div>
   );
 };
