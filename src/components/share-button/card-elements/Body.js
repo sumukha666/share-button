@@ -4,16 +4,18 @@ import UserProfile from "../../common/UserProfile";
 
 const Body = (props) => {
   const { dispSearch, accessUsers } = props;
-  const inputClick = () => {
-    dispSearch(true);
-  };
+  const onBtnClick = () => dispSearch(true);
+
+  const onInputClick = () => dispSearch(true);
 
   return (
     <>
       <SearchField
         name="search"
         placeholder="People, emails, groups"
-        onClick={inputClick}
+        onClick={onBtnClick}
+        onInputClick={onInputClick}
+        disabled={true}
         btnLabel="Invite"
       />
       <div>
