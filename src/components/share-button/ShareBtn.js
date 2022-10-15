@@ -17,7 +17,7 @@ const ShareBtn = (props) => {
   return (
     <>
       <Button label="Share" onClick={toggleShare} />
-      {showCard && <ShareCard dispSearch={()=> setShowSearch(true)} />}
+      {showCard && <ShareCard dispSearch={()=> setShowSearch(true)} accessUsers={props.accessUsers} />}
       {
         showSearch && <SearchProfile onInvite={onInvite} {...props} />
        }
