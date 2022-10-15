@@ -2,8 +2,9 @@ import React from "react";
 import SearchField from "../../common/SearchField";
 
 const Body = (props) => {
+  const { dispSearch } = props;
   const inputClick = () => {
-    console.log( props);
+    dispSearch(true);
   };
 
   return (
