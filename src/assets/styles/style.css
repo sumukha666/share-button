@@ -41,3 +41,18 @@ code {
 .text-para {
   font-size: 0.875rem;
 }
+.card {
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card-header {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.card-body {
+  padding: 1rem;
+}
+.card-footer {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}

@@ -5,10 +5,10 @@ const Card = (props) => {
 
   return (
     <>
-      <div>
-        <header>{headerComp}</header>
-        <main>{mainComp}</main>
-        <footer>{footerComp}</footer>
+      <div className="card">
+        <header className="card-header">{headerComp}</header>
+        <main className="card-body">{mainComp}</main>
+        <footer className="card-footer">{footerComp}</footer>
       </div>
     </>
   );
