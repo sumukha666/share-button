@@ -2,17 +2,21 @@ import React from "react";
 import UserProfile from "../../common/UserProfile";
 
 const DispItems = (props) => {
-  const { list, title } = props;
+  const { list, title, onClick } = props;
   return (
     <>
-      <div className="sub-header">{title}</div>
-      <div className="dsp-flex-col">
-        {list.map((e) => (
-          <div className="select-item">
-            <UserProfile title={e.name} />
+      {list && list.length > 0 && (
+        <div>
+          <div className="sub-header">{title}</div>
+          <div className="dsp-flex-col">
+            {list.map((e) => (
+              <div className="select-item" onClick={()=>onClick(e)}>
+                <UserProfile title={e.name} />
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
+        </div>
+      )}
     </>
   );
 };
