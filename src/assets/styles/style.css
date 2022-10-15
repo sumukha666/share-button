@@ -92,3 +92,14 @@ code {
   background-color: rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+.selected-optn-btn {
+  background-color: initial;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.25rem;
+}
+.select-optn {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+}
