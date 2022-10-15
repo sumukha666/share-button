@@ -75,9 +75,13 @@ code {
   border-radius: 0.25rem;
   border-bottom-left-radius: 0rem;
   border-top-left-radius: 0rem;
+  cursor: pointer;
 }
 .wd-30-r {
   width: 30rem;
+}
+.wd-100-per {
+  width: 100%;
 }
 .plain-text-input {
   width: 100%;
